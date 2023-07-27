@@ -8,19 +8,33 @@
 import SwiftUI
 
 struct ModifyRecipeView: View {
+    enum Selection {
+        case main, ingredients, directions
+    }
+    
     @Binding var recipe: Recipe
     
+    @State private var selection = Selection.main
+    
     var body: some View {
-        Button("Fill in the recipe with test data.") {
-            recipe.mainInformation = MainInformation(name: "test",
-                                                     description: "test",
-                                                     author: "test",
-                                                     category: .breakfast)
-            recipe.directions = [Direction(description: "test",
-                                           isOptional: false)]
-            recipe.ingredients = [Ingredient(name: "test",
-                                             quantity: 1.0,
-                                             unit: .none)]
+        VStack {
+            Picker("Select recipe component", selection: $selection) {
+                Text("Main Info").tag(Selection.main)
+                Text("Ingredients").tag(Selection.ingredients)
+                Text("Directions").tag(Selection.directions)
+            }
+            .pickerStyle(.segmented)
+            .padding()
+            
+            switch selection {
+            case .main:
+                Text("Main Editor")
+            case .ingredients:
+                Text("Ingredients Editor")
+            case .directions:
+                Text("Directions Editor")
+            }
+            Spacer()
         }
     }
 }
