@@ -8,33 +8,34 @@
 import SwiftUI
 
 struct ModifyMainInformationView: View {
+    let rowBackgroundColor = AppColor.background
+    let rowForegroundColor = AppColor.foreground
+
     @Binding var mainInformation: MainInformation
-    private let listBackgroundColor = AppColor.background
-    private let listTextColor = AppColor.foreground
-    
+
     var body: some View {
         Form {
             TextField("Recipe Name", text: $mainInformation.name)
+                .listRowBackground(rowBackgroundColor)
             TextField("Author", text: $mainInformation.author)
-            Section {
+                .listRowBackground(rowBackgroundColor)
+            Section(header: Text("Description")) {
                 TextEditor(text: $mainInformation.description)
-            } header: {
-                Text("Description")
+                    .listRowBackground(rowBackgroundColor)
             }
-            Picker(selection: $mainInformation.category) {
+            Picker(selection: $mainInformation.category, label: HStack {
+                Text("Category")
+                Spacer()
+                Text(mainInformation.category.rawValue)
+            }) {
                 ForEach(MainInformation.Category.allCases, id: \.self) { category in
                     Text(category.rawValue)
                 }
-            } label: {
-                HStack {
-                    Text("Category")
-                    Spacer()
-                }
             }
-            .listRowBackground(listBackgroundColor)
-            .pickerStyle(.menu)
+            .listRowBackground(rowBackgroundColor)
+            .pickerStyle(MenuPickerStyle())
         }
-        .foregroundColor(listTextColor)
+        .foregroundColor(rowForegroundColor)
     }
 }
 
@@ -44,7 +45,7 @@ struct ModifyMainInformationView_Previews: PreviewProvider {
                                                         author: "Test Author",
                                                         category: .breakfast)
     @State static var emptyInformation = MainInformation(name: "", description: "", author: "", category: .breakfast)
-    
+        
     static var previews: some View {
         ModifyMainInformationView(mainInformation: $mainInformation)
         ModifyMainInformationView(mainInformation: $emptyInformation)
