@@ -18,6 +18,7 @@
 		FF384E842A7024F900802BCD /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E832A7024F900802BCD /* RecipeCategoryGridView.swift */; };
 		FF384E882A7159CB00802BCD /* ModifyRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E872A7159CB00802BCD /* ModifyRecipeView.swift */; };
 		FF384E8A2A72B8E000802BCD /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */; };
+		FF384E8C2A72BCDD00802BCD /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		FF384E832A7024F900802BCD /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 		FF384E872A7159CB00802BCD /* ModifyRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyRecipeView.swift; sourceTree = "<group>"; };
 		FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
+		FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				FF384E872A7159CB00802BCD /* ModifyRecipeView.swift */,
 				FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */,
+				FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */,
 			);
 			path = ModifyRecipes;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				FF384E6B2A6FD04A00802BCD /* CookcademyApp.swift in Sources */,
 				FF384E8A2A72B8E000802BCD /* ModifyMainInformationView.swift in Sources */,
 				FF384E822A701BE700802BCD /* AppColor.swift in Sources */,
+				FF384E8C2A72BCDD00802BCD /* ModifyIngredientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
