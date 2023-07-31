@@ -20,6 +20,7 @@
 		FF384E8A2A72B8E000802BCD /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */; };
 		FF384E8C2A72BCDD00802BCD /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */; };
 		FF384E8E2A72BF1000802BCD /* ModifyIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E8D2A72BF1000802BCD /* ModifyIngredientsView.swift */; };
+		FF384E902A77F79500802BCD /* ModifyDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF384E8F2A77F79500802BCD /* ModifyDirectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
 		FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
 		FF384E8D2A72BF1000802BCD /* ModifyIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientsView.swift; sourceTree = "<group>"; };
+		FF384E8F2A77F79500802BCD /* ModifyDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyDirectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				FF384E892A72B8E000802BCD /* ModifyMainInformationView.swift */,
 				FF384E8B2A72BCDD00802BCD /* ModifyIngredientView.swift */,
 				FF384E8D2A72BF1000802BCD /* ModifyIngredientsView.swift */,
+				FF384E8F2A77F79500802BCD /* ModifyDirectionView.swift */,
 			);
 			path = ModifyRecipes;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				FF384E802A6FDF1500802BCD /* RecipeDetailView.swift in Sources */,
 				FF384E842A7024F900802BCD /* RecipeCategoryGridView.swift in Sources */,
 				FF384E7E2A6FDD0A00802BCD /* RecipeData.swift in Sources */,
+				FF384E902A77F79500802BCD /* ModifyDirectionView.swift in Sources */,
 				FF384E882A7159CB00802BCD /* ModifyRecipeView.swift in Sources */,
 				FF384E8E2A72BF1000802BCD /* ModifyIngredientsView.swift in Sources */,
 				FF384E6D2A6FD04A00802BCD /* RecipesListView.swift in Sources */,
