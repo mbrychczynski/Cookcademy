@@ -61,6 +61,7 @@ class RecipeData: ObservableObject {
     func add(recipe: Recipe) {
         if recipe.isValid {
             recipes.append(recipe)
+            saveRecipes()
         }
     }
     
